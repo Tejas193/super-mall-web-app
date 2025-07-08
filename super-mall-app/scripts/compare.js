@@ -5,6 +5,7 @@ import {
   getDocs
 } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
+
 const db = getFirestore(app);
 
 const shop1 = document.getElementById("shop1");

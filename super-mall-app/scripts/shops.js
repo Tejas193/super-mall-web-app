@@ -8,6 +8,7 @@ import {
   onSnapshot
 } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
+
 const toggleBtn = document.getElementById("toggleShopForm");
 const shopFormContainer = document.getElementById("shopFormContainer");
 

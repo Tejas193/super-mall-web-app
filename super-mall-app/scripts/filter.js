@@ -51,6 +51,7 @@ applyFilters.addEventListener("click", async () => {
       filteredOffers.appendChild(card);
     }
   });
+  
 
   if (filteredOffers.innerHTML === "") {
     filteredOffers.innerHTML = "<p>No offers found for selected filters.</p>";
