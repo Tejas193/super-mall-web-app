@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Manage Shops</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+  
+<body>
+  <nav class="navbar">
+    <h2>MegaMart Central</h2>
+    <ul>
+      <li><a href="dashboard.html"> Dashboard</a></li>
+      <li><a href="shops.html"> Shops</a></li>
+      <li><a href="offers.html"> Offers</a></li>
+      <li><a href="compare.html"> Compare</a></li>
+      <li><a href="../public/index.html"> Logout</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <div class="page-header">
+      <h1> All Shops</h1>
+      <button id="toggleShopForm">+ Add Shop</button>
+    </div>
+
+    <section id="shopFormContainer" class="form-section hidden">
+      <form id="shopForm">
+        <input type="text" id="shopName" placeholder="Shop Name" required />
+        <input type="text" id="contact" placeholder="Contact Info" required />
+        <select id="category" required>
+          <option value="">-- Select Category --</option>
+          <option value="Grocery">Grocery</option>
+          <option value="Clothing">Clothing</option>
+          <option value="Electronics">Electronics</option>
+        </select>
+        <select id="floor" required>
+          <option value="">-- Select Floor --</option>
+          <option value="Ground">Ground</option>
+          <option value="First">First</option>
+          <option value="Second">Second</option>
+        </select>
+        <button type="submit">Add Shop</button>
+        <p id="shopMsg" style="color: green;"></p>
+      </form>
+    </section>
+
+    <div id="shopList"></div>
+  </main>
+
+  <script type="module" src="../scripts/shops.js"></script>
+</body>
+
+</html>
