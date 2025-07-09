@@ -19,7 +19,7 @@ loginForm.addEventListener("submit", async (e) => {
     const userCredential = await signInWithEmailAndPassword(auth, email, password);
     const user = userCredential.user;
     console.log("Logged in:", user.email);
-    window.location.href = "./pages/dashboard.html";
+    window.location.href = "https://tejas193.github.io/super-mall-web-app/docs/pages/dashboard.html";
   } catch (error) {
     console.error("Login failed:", error.message);
     errorMsg.textContent = " Invalid email or password";
