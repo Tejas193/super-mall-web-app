@@ -1,4 +1,4 @@
-import { app } from '/super-mall-app/firebase-config.js';
+import { app } from './super-mall-app/firebase-config.js';
 import {
   getAuth,
   signInWithEmailAndPassword
@@ -19,7 +19,7 @@ loginForm.addEventListener("submit", async (e) => {
     const userCredential = await signInWithEmailAndPassword(auth, email, password);
     const user = userCredential.user;
     console.log("Logged in:", user.email);
-    window.location.href = "/super-mall-app/pages/dashboard.html";
+    window.location.href = "./super-mall-app/pages/dashboard.html";
   } catch (error) {
     console.error("Login failed:", error.message);
     errorMsg.textContent = " Invalid email or password";
